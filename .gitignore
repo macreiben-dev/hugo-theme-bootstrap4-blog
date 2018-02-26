@@ -3,3 +3,4 @@ exampleSite/themes
 yarn.lock
 static/js
 static/css
+package-lock.json
