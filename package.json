@@ -11,7 +11,8 @@
     "build:fonts": "cp node_modules/font-awesome/fonts/* static/fonts",
     "build:cookieconsent": "cp node_modules/cookieconsent/build/cookieconsent.min.css static/css && cp node_modules/cookieconsent/build/cookieconsent.min.js static/js",
     "build:generatesri": "node build/sri.js > data/sri.toml",
-    "build": "npm run build:css && npm run build:fonts && npm run build:cookieconsent && npm run build:generatesri && npm run clean",
+    "build:jsfwk": "cp node_modules/jquery/dist/jquery.min.js static/js && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js static/js",
+    "build": "npm run build:css && npm run build:fonts && npm run build:cookieconsent && npm run build:generatesri && npm run build:jsfwk && npm run clean",
     "clean": "rm static/css/style.css.tmp"
   },
   "keywords": "hugo",
@@ -22,6 +23,7 @@
     "clean-css-cli": "^4.1.10",
     "cookieconsent": "^3.0.4",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
     "node-sass": "^4.7.2"
   }
 }
