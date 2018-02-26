@@ -12,11 +12,6 @@ categories = [
     "Development",
     "golang",
 ]
-keywords = [
-    "Hugo",
-    "static",
-    "generator",
-]
 menu = "main"
 +++
 
