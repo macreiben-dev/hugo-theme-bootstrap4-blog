@@ -1,3 +1,4 @@
 node_modules
 exampleSite/themes
 yarn.lock
+static/js
